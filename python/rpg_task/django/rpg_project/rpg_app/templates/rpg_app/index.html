@@ -1,0 +1,15 @@
+{% extends 'rpg_app/base.html' %}
+{% load static %}
+{% block content %}
+<h1>RPG Game</h1>
+<canvas id="rpg_canvas" width="300px" height="120px"></canvas>
+<div class="imgs" style="display: none;">
+    {% for i in players %}
+    <img src="{% static 'rpg_app/imgs/player' %}{{ i }}.png" id="player{{ i }}">
+    {% endfor %}
+    <img src="{% static 'rpg_app/imgs/player_looser1.png' %}" id="player1_loose">
+    <img src="{% static 'rpg_app/imgs/player_looser2.png' %}" id="player2_loose">
+    <img src="{% static 'rpg_app/imgs/player_winner1.png' %}" id="player1_win">
+    <img src="{% static 'rpg_app/imgs/player_winner2.png' %}" id="player2_win">
+</div>
+{% endblock %}

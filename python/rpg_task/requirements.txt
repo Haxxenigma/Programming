@@ -1,0 +1,8 @@
+asgiref==3.7.2
+Django==5.0.2
+django-markdownx==4.0.7
+Markdown==3.5.2
+pillow==10.2.0
+pygame==2.5.2
+sqlparse==0.4.4
+tzdata==2024.1
